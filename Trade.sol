@@ -31,7 +31,4 @@ contract Trade {
         require(msg.sender == owner, "Only owner can withdraw");
         owner.transfer(address(this).balance);
     }
-
-
-
 }
